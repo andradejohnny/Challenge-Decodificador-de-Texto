@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 6px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    border-radius: 6px;
+  }
+}
+
+body {
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #e5e5e5;
+}
+
+.logoAlura {
+  margin: 1%;
+  padding: 10px;
+  width: 5%;
+}
+
+.apresentacao {
+  padding: 1.5rem 2.5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  overflow-y: hidden;
+}
+
+.conteiner_apresentacao {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 40rem;
+}
+
+.conteiner_apresentacao_botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.text-area {
+  /* border: none;
+  color: #0a3871;
+  margin-top: 90px;
+  text-transform: lowercase; */
+  border: none;
+  color: #0a3871;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 32px;
+  width: 680px;
+  min-height: 200px;
+  max-height: 440px;
+  height: 100%;
+  background-color: #e5e5e5;
+  resize: none;
+}
+
+.text-area:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: #0a3871;
+}
+
+.mensagem {
+  border: none;
+  border-radius: 24px;
+  color: #0a3871;
+  box-sizing: border-box;
+  background: white;
+  height: 700px;
+  padding: 32px;
+}
+
+.aguardando {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+}
+.msgVazia {
+  width: 336px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+}
+
+.msgVazia p {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  color: #343a40;
+  font-weight: bolder;
+}
+
+#aguardando span {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #495057;
+}
+
+#textoCriptografado {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  height: 100%;
+}
+.textoSaida {
+  height: 469px;
+}
+#texto2 {
+  font-family: 'Inter', sans-serif;
+  color: #495057;
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 24px;
+}
+
+#textoCriptografado button {
+  background: #d8dff8;
+  color: #0a3871;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  cursor: pointer;
+  height: 67px;
+  width: 328px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+
+.mensagem:focus {
+  outline: none;
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container__botao__criptografar {
+  background: #d8dff8;
+  color: #0a3871;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  cursor: pointer;
+  height: 67px;
+  width: 328px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.container__botao__descriptografar {
+  background: #0a3871;
+  color: white;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  cursor: pointer;
+  height: 67px;
+  width: 328px;
+  margin-left: 24px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.container__botao__copiar {
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  color: #0a3871;
+  /* cursor: pointer;
+  height: 67px;
+  margin-left: 108px;
+  margin-top: 402px;
+  position: absolute;
+  width: 328px; */
+}
+
+.informacao {
+  display: flex;
+  gap: 8px;
+}
+
+.informacao h6 {
+  color: #495057;
+  font-family: 'Inter', sans-serif;
+  line-height: 150%;
+  font-size: 12px;
+  width: 252;
+  height: 18;
+}

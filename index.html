@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+    <title>Decodificador</title>
+  </head>
+  <body>
+    <header>
+      <img class="logoAlura" src="/img/logo-alura.png" alt="Logo Alura" />
+    </header>
+
+    <main class="apresentacao">
+      <section class="conteiner_apresentacao">
+        <textarea
+          class="text-area"
+          cols="41"
+          rows="4"
+          placeholder="Digite seu texto"
+          
+        ></textarea>
+        <div class="conteiner_apresentacao_botoes">
+          <div class="informacao">
+            <img src="./img/bi_exclamation-circle-fill.png" alt="" />
+            <h6>Apenas letras mínusculas e sem acento.</h6>
+          </div>
+          <div class="botoes">
+            <button
+              onclick="btnCriptografar()"
+              id="criptografar"
+              class="container__botao__criptografar"
+            >
+              Criptografar
+            </button>
+            <button
+              onclick="btnDescriptografar()"
+              id="descriptografar"
+              class="container__botao__descriptografar"
+            >
+              Descriptografar
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="mensagem">
+        <div class="aguardando" id="aguardando">
+          <div><img class="imagem" src="./img/boneco.png" alt="" /></div>
+          <div class="msgVazia">
+            <p>Nenhuma mensagem encontrada</p>
+            <span>
+              Digite um texto que você deseja criptografar ou descriptografar.
+            </span>
+          </div>
+        </div>
+        <div id="textoCriptografado">
+          <div class="textoSaida"><span id="texto2"></span></div>
+          <div>
+            <button
+              onclick="copiar()"
+              id="copiar"
+              class="container__botao__copiar"
+            >
+              Copiar
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
