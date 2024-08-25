@@ -2,19 +2,17 @@
 
 Repositório criado para armazenar o projeto do desafio de criar um decodificador de texto!
 
-
-
-## 💻 Requisitos do Sistema:
+## 💻 Requisitos do programa:
 
 Para criar o decodificador de texto utilizamos uma tabela de conversão como referência:
 
 | Letra | Palavra |
-|-------|---------|
-| e | [enter] | 
-| i | [imes] | 
-| a | [ai] | 
-| o | [ober] | 
-| u | [ufat] | 
+| ----- | ------- |
+| e     | [enter] |
+| i     | [imes]  |
+| a     | [ai]    |
+| o     | [ober]  |
+| u     | [ufat]  |
 
 ```
 Também alguns requisitos foram seguidos:
@@ -28,7 +26,7 @@ Também alguns requisitos foram seguidos:
 
 ## Conclusão:
 
-Conclui o desafio com muitos testes e pesquisas, realmente foi um desafio, porém me ajudou muito a evoluir na programação, no momento ele está funcionando apenas para desktop, porém logo pretendo adapta-lo para funcionar em smarthphones e tablets, abaixo deixo o link do deploy: 
+Conclui o desafio com muitos testes e pesquisas, realmente foi um desafio, porém me ajudou muito a evoluir na programação, no momento ele está funcionando apenas para desktop, porém logo pretendo adapta-lo para funcionar em smarthphones e tablets, abaixo deixo o link do deploy:
 
 - https://andradejohnny.github.io/Challenge-Decodificador-de-Texto/
 - https://challenge-decodificador-de-texto-ecru.vercel.app/
