@@ -80,7 +80,7 @@ function criptografar(stringCriptografada) {
 function mostrarTexto(value) {
   document.getElementById('aguardando').style.visibility = 'hidden';
   document.getElementById('aguardando').style.display = 'none';
-  document.getElementById('textoCriptografado').style.visibility = 'visible';
+  document.getElementById('textoCriptografado').style.display = 'flex';
   const textoCriptografado = document.getElementById('texto2');
   textoCriptografado.innerHTML = value;
 }

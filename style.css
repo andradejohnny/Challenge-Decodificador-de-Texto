@@ -5,7 +5,7 @@
   padding: 0;
 
   ::-webkit-scrollbar {
-    width: 6px;
+    width: 0.375rem;
   }
 
   ::-webkit-scrollbar-track {
@@ -14,36 +14,39 @@
 
   ::-webkit-scrollbar-thumb {
     background: #888;
-    border-radius: 6px;
+    border-radius: 0.375rem;
   }
 
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
-    border-radius: 6px;
+    border-radius: 0.375rem;
   }
 }
 
 body {
   height: 100vh;
   box-sizing: border-box;
+  width: 100%;
   background-color: #e5e5e5;
+  overflow: hidden;
+}
+
+.cabecalho {
+  margin: 1%;
+  padding: 0.625rem;
 }
 
 .logoAlura {
-  margin: 1%;
-  padding: 10px;
   width: 5%;
 }
 
 .apresentacao {
-  padding: 1.5rem 2.5rem;
-  box-sizing: border-box;
+  padding: 0 2.5rem;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 32px;
-  overflow-y: hidden;
+  gap: 5rem;
 }
 
 .conteiner_apresentacao {
@@ -51,12 +54,23 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 40rem;
+  width: 50%;
 }
 
 .conteiner_apresentacao_botoes {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
+}
+
+.informacao {
+  display: flex;
+  align-items: center;
+}
+
+.informacao img {
+  width: 1rem;
+  height: 1rem;
 }
 
 .text-area {
@@ -70,13 +84,14 @@ body {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   line-height: 150%;
-  font-size: 32px;
-  width: 680px;
-  min-height: 200px;
-  max-height: 440px;
+  font-size: 2rem;
+  max-width: 42.5rem;
+  min-height: 12.5rem;
+  max-height: 27.5rem;
   height: 100%;
   background-color: #e5e5e5;
   resize: none;
+  overflow: auto;
 }
 
 .text-area:focus {
@@ -88,76 +103,85 @@ body {
 }
 
 .mensagem {
-  border: none;
-  border-radius: 24px;
+  border-radius: 1.5rem;
   color: #0a3871;
-  box-sizing: border-box;
   background: white;
-  height: 700px;
-  padding: 32px;
+  height: 43.75rem;
+  max-width: 62.5rem;
+  padding: 2rem 2rem;
 }
 
 .aguardando {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 2rem;
   align-items: center;
   justify-content: center;
-
   height: 100%;
 }
+.imagem {
+  width: 100%;
+}
 .msgVazia {
-  width: 336px;
+  width: 21rem;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
   text-align: center;
 }
 
 .msgVazia p {
   font-family: 'Inter', sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #343a40;
   font-weight: bolder;
 }
 
 #aguardando span {
   font-family: 'Inter', sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   color: #495057;
 }
 
 #textoCriptografado {
-  visibility: hidden;
-  display: flex;
+  display: none;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 16px;
+  gap: 2rem;
   height: 100%;
 }
 .textoSaida {
-  height: 469px;
+  height: 29.313rem;
+  box-sizing: border-box;
+  line-height: 150%;
+  font-size: 2rem;
+  width: 20rem;
+  min-height: 12.5rem;
+  max-height: 36rem;
+  height: 100%;
+  resize: none;
+  overflow-y: auto;
 }
 #texto2 {
   font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
   color: #495057;
   font-weight: 400;
   line-height: 150%;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 #textoCriptografado button {
   background: #d8dff8;
   color: #0a3871;
-  border: 1px solid #0a3871;
-  border-radius: 24px;
+  border: 0.0625rem solid #0a3871;
+  border-radius: 1.5rem;
   cursor: pointer;
-  height: 67px;
-  width: 328px;
+  height: 4.19rem;
+  width: 20.5rem;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   line-height: 150%;
-  font-size: 16px;
+  font-size: 1rem;
   text-decoration: none;
 }
 
@@ -167,43 +191,43 @@ body {
 
 .botoes {
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
+  gap: 2rem;
 }
 
 .container__botao__criptografar {
   background: #d8dff8;
   color: #0a3871;
-  border: 1px solid #0a3871;
-  border-radius: 24px;
+  border: 0.0625rem solid #0a3871;
+  border-radius: 1.5rem;
   cursor: pointer;
-  height: 67px;
-  width: 328px;
+  height: 4.19rem;
+  width: 20.5rem;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   line-height: 150%;
-  font-size: 16px;
+  font-size: 1rem;
   text-decoration: none;
 }
 
 .container__botao__descriptografar {
   background: #0a3871;
   color: white;
-  border: 1px solid #0a3871;
+  border: 0.0625rem solid #0a3871;
   border-radius: 24px;
   cursor: pointer;
-  height: 67px;
-  width: 328px;
-  margin-left: 24px;
+  height: 4.19rem;
+  width: 20.5rem;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   line-height: 150%;
-  font-size: 16px;
+  font-size: 1rem;
   text-decoration: none;
 }
 
 .container__botao__copiar {
-  border: 1px solid #0a3871;
-  border-radius: 24px;
+  border: 0.0625rem solid #0a3871;
+  border-radius: 1.5rem;
   color: #0a3871;
   /* cursor: pointer;
   height: 67px;
@@ -215,14 +239,50 @@ body {
 
 .informacao {
   display: flex;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .informacao h6 {
   color: #495057;
   font-family: 'Inter', sans-serif;
   line-height: 150%;
-  font-size: 12px;
+  font-size: 1rem;
   width: 252;
   height: 18;
+}
+
+@media (max-width: 1000px) {
+  body {
+    overflow-y: scroll;
+  }
+  /* .cabecalho {
+    padding: 3rem 1rem;
+  } */
+  .logoAlura {
+    width: 15%;
+  }
+  .apresentacao {
+    /* flex-direction: column; */
+  }
+  .conteiner_apresentacao {
+    width: 100%;
+  }
+  .mensagem {
+    height: max-content;
+    /* height: 8.32rem; */
+    max-width: 62.5rem;
+    width: 43rem;
+  }
+  .imagem {
+    display: none;
+  }
+
+  .textoSaida {
+    height: auto;
+    width: 100%;
+  }
+
+  #textoCriptografado button {
+    width: 100%;
+  }
 }
