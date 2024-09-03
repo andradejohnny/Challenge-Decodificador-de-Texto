@@ -26,7 +26,7 @@ Também alguns requisitos foram seguidos:
 
 ## Conclusão:
 
-Conclui o desafio com muitos testes e pesquisas, realmente foi um desafio, porém me ajudou muito a evoluir na programação, no momento ele está funcionando apenas para desktop, porém logo pretendo adapta-lo para funcionar em smarthphones e tablets, abaixo deixo o link do deploy:
+Foi uma grande experiência, com muitos testes e pesquisas, mas sem dúvida valeu a pena. Esse projeto me ajudou a evoluir bastante na programação, abaixo deixo o link do deploy:
 
 - https://andradejohnny.github.io/Challenge-Decodificador-de-Texto/
 - https://challenge-decodificador-de-texto-ecru.vercel.app/
